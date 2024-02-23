@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order App</title>
+    
+    <link rel="stylesheet" href="FoodWeb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Food HUB</h1>
+            </div>
+            <div class="inputs">
+                <input type="text" value="" id="inp" placeholder="Search here..." onkeyup="myFun()" >
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="icon">
+                <i onclick="Login()" class="fas fa-user"></i>
+                <i onclick="nav()" class="fas fa-bars"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+        
+<div class="login">
+    <h2>Log In</h2>
+    <input type="text" placeholder="Enter your Name">
+    <input type="password" placeholder="Enter your password"><br><br>
+    <button>Log In</button>
+</div>
+
+<div class="nav">
+    <p>Home</p>
+    <p>Foods</p>
+    <p>Blogs</p>
+    <p>Customer</p>
+</div>
+<!--  main page -->
+<div class="main">
+    <div class="text">
+<h1>Simple & Tasty Recipes</h1>
+<p>The only thing better than one super easy dinner is being able to make *four* of them at once. 
+    This handy meal prep version means you can stash a few away for future Hungry You. </p>
+<button>Explore More</button>
+    </div>
+    <img src="burger.webp" alt="">
+</div>
+<!--  Card Food -->
+<table>
+    <tr>
+        <td>
+            <div class="head">
+                <h1>Our <span>Foods</span> </h1>
+            </div>
+            <div class="crd">
+                <div class="card">
+                    <img src="bajitan.jpg" alt="">
+                    <h2>299 Rupees only</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                <button>Order now</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="chiken.jpg" alt="">
+                        <h2>399 Rupees only</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                    <button>Order now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="dhokala.jpg" alt="">
+                            <h2>90 Rupees only</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <button>Order now</button>
+                            </div>
+            </div>
+
+            <div class="crd">
+                <div class="card">
+                    <img src="Eggs.jpg" alt="">
+                    <h2>130 Rupees only</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                <button>Order now</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="kachori.jpg" alt="">
+                        <h2>99 Rupees only</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                    <button>Order now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="maggi.webp" alt="">
+                            <h2>199 Rupees only</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <button>Order now</button>
+                            </div>
+            </div>
+
+            <div class="crd">
+                <div class="card">
+                    <img src="manchurian.jpg" alt="">
+                    <h2>220 Rupees only</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                <button>Order now</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="paniPuri.jpg" alt="">
+                        <h2>150 Rupees only</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                    <button>Order now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="pizza.webp" alt="">
+                            <h2>120 Rupees only</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <button>Order now</button>
+                            </div>
+            </div>
+
+            <div class="crd">
+                <div class="card">
+                    <img src="pohe.jpg" alt="">
+                    <h2>99 Rupees only</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                <button>Order now</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="samosa.jpg" alt="">
+                        <h2>199 Rupees only</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                    <button>Order now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="burger.webp" alt="">
+                            <h2>200 Rupees only</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <button>Order now</button>
+                            </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="head">
+                <h1>Our <span>Blogs</span></h1>
+            </div>
+            <div class="mgr">
+            <div class="crd">
+               
+                <div class="blog">
+                    <img src="bajitan.jpg" alt="">
+                    <h2>Fact about Indian Food</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <a href="https://www.littleindiaofdenver.com/blog/7-facts-you-never-knew-about-indian-food/">Read more</a>
+                    </div>
+
+                    <div class="blog">
+                        <img src="chiken.jpg" alt="">
+                        <h2>Different Type of Chiken</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                    <a href="https://en.wikipedia.org/wiki/List_of_chicken_dishes">Read more</a>
+                        </div>
+
+                        <div class="blog">
+                            <img src="dhokala.jpg" alt="">
+                            <h2>Different Type of Dhokala</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                                <a href="https://recipes.timesofindia.com/articles/features/varieties-of-dhoklas-and-their-recipes/photostory/74387850.cms">Read more</a>
+                            </div>
+            </div>
+
+            <div class="crd">
+                <div class="blog">
+                    <img src="Eggs.jpg" alt="">
+                    <h2>Eggs Recipes</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <a href="https://www.goodhousekeeping.com/food-recipes/easy/g428/easy-egg-recipes/">Read more</a>
+                    </div>
+
+                    <div class="blog">
+                        <img src="kachori.jpg" alt="">
+                        <h2>Different Type of kachori</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                            <a href="https://www.arthparkash.com/Food/details/25692/how-to-make-different-types-of-kachori">Read more</a>
+                          </div>
+                        <div class="blog">
+                            <img src="maggi.webp" alt="">
+                            <h2>Delishes Maggi Recipes</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                                <a href="https://www.maggi.in/en/recipes/maggi-noodles/">Read more</a>
+                            </div>
+            </div>
+
+            <div class="crd">
+                <div class="blog">
+                    <img src="manchurian.jpg" alt="">
+                    <h2>Different Type of manchurian</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <a href="https://www.slurrp.com/article/10-super-innovative-manchurian-types-for-a-perfect-lunch-table-1678774244164">Read more</a>
+                    </div>
+
+                    <div class="blog">
+                        <img src="paniPuri.jpg" alt="">
+                        <h2>Recipes of paniPuri</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                            <a href="https://foodviva.com/snacks-recipes/pani-puri/">Read more</a>
+                        </div>
+
+                        <div class="blog">
+                            <img src="pizza.webp" alt="">
+                            <h2>Recipes of pizza</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                                <a href="https://www.indianhealthyrecipes.com/pizza-recipe-make-pizza/">Read more</a>
+                            </div>
+            </div>
+
+            <div class="crd">
+                <div class="blog">
+                    <img src="pohe.jpg" alt="">
+                    <h2>Recipes of Indian Pohe</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                        Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                        <a href="https://www.indianhealthyrecipes.com/poha-recipe-kanda-batata-poha/">Read more</a>
+                    </div>
+
+                    <div class="blog">
+                        <img src="samosa.jpg" alt="">
+                        <h2>Different Type of samosa</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                            Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                            <a href="https://recipes.timesofindia.com/web-stories/13-different-types-of-samosas-that-are-worth-a-try/photostory/89032723.cms">Read more</a>
+                        </div>
+
+                        <div class="blog">
+                            <img src="burger.webp" alt="">
+                            <h2>Dilishes Recipes of burger</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, laborum incidunt excepturi modi explicabo eius ab sequi obcaecati eaque alias amet? In, sunt. 
+                                Natus eaque maxime, dignissimos modi maiores rerum!</p>
+                                <a href="https://www.foodandwine.com/comfort-food/burgers/burger-recipes">Read more</a>
+                            </div>
+            </div>
+        </div>
+        </td>
+    </tr>
+
+</table>
+
+<!-- customer Review -->
+
+<h1 class="rev"> Customer <span >Review</span></h1>
+
+<div class="review">
+   
+    <div class="customer">
+      
+        <img src="female2.jpeg" alt=""><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quasi, suscipit quam, ex ut exercitationem reprehenderit in rem amet debitis, ratione iste repellendus. Odio libero optio numquam, quasi perferendis rem.</p> 
+        <br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+
+    <div class="customer">
+        <img src="male2.jpg" alt=""><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quasi, suscipit quam, ex ut exercitationem reprehenderit in rem amet debitis, ratione iste repellendus. Odio libero optio numquam, quasi perferendis rem.</p> 
+        <br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+
+    <div class="customer">
+        <img src="female1.jpeg" alt=""><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quasi, suscipit quam, ex ut exercitationem reprehenderit in rem amet debitis, ratione iste repellendus. Odio libero optio numquam, quasi perferendis rem.</p> 
+        <br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <div class="customer">
+        <img src="male1.jpeg" alt=""><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quasi, suscipit quam, ex ut exercitationem reprehenderit in rem amet debitis, ratione iste repellendus. Odio libero optio numquam, quasi perferendis rem.</p> 
+        <br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+</div>
+<div class="btn">
+    <button onclick="pre()">Prev</button>
+    <button onclick="next()">Next</button>
+</div>
+<div class="footer">
+    <div class="txt">
+        <h2>About US</h2>
+        <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Corporis,
+    <p>Customer</p>
+    <p>Foods</p>
+        </div>
+
+        <div class="txt">
+            <h2>About US</h2>
+            <p>Product</p>
+        <p>Services</p>
+        <p>Customer</p>
+        <p>Foods</p>
+            </div>
+
+            <div class="txt">
+                <h2>About US</h2>
+                <p>Near</p>
+                 <p>Services</p>
+                <p>Customer</p>
+                <p>Foods</p>
+                </div>
+
+                <div class="txt">
+                    <h2>About US</h2>
+                    <p>Websites</p>
+                <p>Services</p>
+                <p>Customer</p>
+                <p>Foods</p>
+                    </div>
+                   
+</div>
+<div class="div">Meet Once Again</div>
+</div>
+
+    <script src="FoodWeb.js"></script>
+</body>
+</html>
